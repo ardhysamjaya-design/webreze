@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Webreze is a modern web design agency building high-converting websites for growing brands." />
+  <title>Webreze | Web Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo">webreze</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small" href="#contact">Book a Call</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Web Design Agency</p>
+          <h1>We design websites that make your brand impossible to ignore.</h1>
+          <p class="hero-copy">
+            At Webreze, we blend strategy, clean design, and conversion-first thinking to build websites that look premium and perform even better.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Start Your Project</a>
+            <a class="btn btn-ghost" href="#work">See Our Work</a>
+          </div>
+          <ul class="hero-stats" aria-label="Agency Highlights">
+            <li><strong>120+</strong><span>Projects launched</span></li>
+            <li><strong>40%</strong><span>Average conversion lift</span></li>
+            <li><strong>4.9/5</strong><span>Client satisfaction</span></li>
+          </ul>
+        </div>
+        <div class="hero-card" role="presentation">
+          <p>Launch-ready in weeks, not months.</p>
+          <h2>Built for growth teams and ambitious founders.</h2>
+          <div class="card-pill">Branding + UI/UX + Development</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2>Everything you need for a high-impact web presence.</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Custom Website Design</h3>
+            <p>Thoughtful, modern interfaces tailored to your goals, audience, and brand voice.</p>
+          </article>
+          <article class="card">
+            <h3>Landing Page Optimization</h3>
+            <p>Conversion-focused landing pages built to increase leads, demos, and purchases.</p>
+          </article>
+          <article class="card">
+            <h3>Web Development</h3>
+            <p>Fast, responsive, and SEO-friendly websites developed with clean, scalable code.</p>
+          </article>
+          <article class="card">
+            <h3>Brand & Visual Direction</h3>
+            <p>Clear visual systems to help your business look polished and consistent everywhere.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-dark">
+      <div class="container">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Recent projects with measurable outcomes.</h2>
+        <div class="work-grid">
+          <article class="work-item">
+            <h3>NovaTech SaaS</h3>
+            <p>Redesigned a B2B product website and improved demo bookings by 52% in 3 months.</p>
+          </article>
+          <article class="work-item">
+            <h3>Blossom Beauty</h3>
+            <p>Built a new e-commerce storefront that increased checkout conversion by 31%.</p>
+          </article>
+          <article class="work-item">
+            <h3>Atlas Finance</h3>
+            <p>Created a clean, trusted brand web experience that doubled qualified leads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Why Webreze</p>
+          <h2>Your design partner from idea to launch.</h2>
+          <p>
+            We are a boutique agency obsessed with craft, speed, and outcomes. You get a small senior team that works closely with you from discovery to launch.
+          </p>
+        </div>
+        <ul class="checklist">
+          <li>Strategy-first process</li>
+          <li>Senior designers and developers</li>
+          <li>Transparent timeline and communication</li>
+          <li>Post-launch support and iteration</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <h2>What clients say</h2>
+        <blockquote>
+          “Webreze transformed our website into a lead engine. The process was smooth, and the quality exceeded expectations.”
+          <cite>— Sarah Kim, Marketing Director at NovaTech</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build your next high-performing website.</h2>
+          <p>Tell us about your goals and we’ll get back within one business day.</p>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label>
+            Project Brief
+            <textarea name="brief" rows="4" placeholder="What are you building?" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send Inquiry</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Webreze. All rights reserved.</p>
+      <p>Designed with purpose.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
