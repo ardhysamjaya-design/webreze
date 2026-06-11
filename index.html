@@ -3,134 +3,249 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Webreze is a modern web design agency building high-converting websites for growing brands." />
-  <title>Webreze | Web Design Agency</title>
+  <meta name="description" content="Wirasena Digital is a warm futuristic studio crafting premium websites, brand systems, and growth-ready digital experiences." />
+  <title>Wirasena Digital | Soft Bento Digital Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#" class="logo">webreze</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#work">Work</a>
+    <div class="container nav-shell">
+      <a href="#home" class="brand" aria-label="Wirasena Digital home">
+        <span class="brand-mark">WD</span>
+        <span>Wirasena Digital</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle menu</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-small" href="#contact">Book a Call</a>
+      <a class="btn btn-small nav-cta" href="#contact">Plan a Project</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="home">
+    <section class="hero section-glow">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Web Design Agency</p>
-          <h1>We design websites that make your brand impossible to ignore.</h1>
-          <p class="hero-copy">
-            At Webreze, we blend strategy, clean design, and conversion-first thinking to build websites that look premium and perform even better.
+        <div class="hero-copy fade-up">
+          <p class="eyebrow">Soft Bento SaaS / Warm Futuristic Studio</p>
+          <h1>Digital experiences that feel calm, premium, and ready to grow.</h1>
+          <p class="lead">
+            Wirasena Digital partners with founders, SMEs, and growth teams to design warm, conversion-focused websites with the polish of a SaaS product and the soul of a creative studio.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#contact">Start Your Project</a>
-            <a class="btn btn-ghost" href="#work">See Our Work</a>
+            <a class="btn" href="#packages">Explore Packages</a>
+            <a class="btn btn-ghost" href="#portfolio">View Portfolio</a>
           </div>
-          <ul class="hero-stats" aria-label="Agency Highlights">
-            <li><strong>120+</strong><span>Projects launched</span></li>
-            <li><strong>40%</strong><span>Average conversion lift</span></li>
-            <li><strong>4.9/5</strong><span>Client satisfaction</span></li>
-          </ul>
+          <div class="trust-row" aria-label="Studio highlights">
+            <span>Strategy-led</span>
+            <span>Mobile-first</span>
+            <span>Launch support</span>
+          </div>
         </div>
-        <div class="hero-card" role="presentation">
-          <p>Launch-ready in weeks, not months.</p>
-          <h2>Built for growth teams and ambitious founders.</h2>
-          <div class="card-pill">Branding + UI/UX + Development</div>
+
+        <div class="hero-bento fade-up" style="--delay: 120ms" aria-label="Wirasena Digital project dashboard preview">
+          <article class="bento-card bento-card-large">
+            <span class="mini-label">Project Pulse</span>
+            <strong>Website launch system</strong>
+            <p>Brand clarity, UX flows, copy structure, responsive UI, and clean handoff.</p>
+            <div class="progress-track"><span></span></div>
+          </article>
+          <article class="bento-card metric-card">
+            <strong>3–6 wks</strong>
+            <span>typical launch</span>
+          </article>
+          <article class="bento-card metric-card peach">
+            <strong>7+</strong>
+            <span>reusable sections</span>
+          </article>
+          <article class="bento-card palette-card">
+            <span></span><span></span><span></span>
+            <p>Warm neutral UI system</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container split-grid">
+        <div class="section-intro fade-up">
+          <p class="eyebrow">About Wirasena</p>
+          <h2>A thoughtful digital studio for brands that want substance and softness.</h2>
+        </div>
+        <div class="soft-panel fade-up" style="--delay: 100ms">
+          <p>
+            We combine product strategy, visual storytelling, and front-end craft to create websites that are easy to trust and effortless to use. Every page is shaped by clear hierarchy, consistent tokens, and purposeful motion.
+          </p>
+          <ul class="check-list">
+            <li>Design-system-first visual direction</li>
+            <li>Responsive layouts for modern buying journeys</li>
+            <li>Conversion copy blocks and scalable sections</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <p class="eyebrow">Services</p>
-        <h2>Everything you need for a high-impact web presence.</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Custom Website Design</h3>
-            <p>Thoughtful, modern interfaces tailored to your goals, audience, and brand voice.</p>
+        <div class="section-heading fade-up">
+          <p class="eyebrow">Services</p>
+          <h2>Reusable digital building blocks for your next stage.</h2>
+          <p>Choose focused services or combine them into a complete website launch.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card fade-up">
+            <span class="card-icon">✦</span>
+            <h3>Website Strategy</h3>
+            <p>Information architecture, page goals, offer positioning, and a roadmap that keeps every section intentional.</p>
           </article>
-          <article class="card">
-            <h3>Landing Page Optimization</h3>
-            <p>Conversion-focused landing pages built to increase leads, demos, and purchases.</p>
+          <article class="service-card fade-up" style="--delay: 80ms">
+            <span class="card-icon">◌</span>
+            <h3>UI/UX Design</h3>
+            <p>Soft bento layouts, elegant components, responsive prototypes, and warm futuristic visual systems.</p>
           </article>
-          <article class="card">
+          <article class="service-card fade-up" style="--delay: 160ms">
+            <span class="card-icon">⌁</span>
             <h3>Web Development</h3>
-            <p>Fast, responsive, and SEO-friendly websites developed with clean, scalable code.</p>
+            <p>Fast, accessible, mobile-first pages built with clean structure, subtle motion, and practical maintainability.</p>
           </article>
-          <article class="card">
-            <h3>Brand & Visual Direction</h3>
-            <p>Clear visual systems to help your business look polished and consistent everywhere.</p>
+          <article class="service-card fade-up" style="--delay: 240ms">
+            <span class="card-icon">◎</span>
+            <h3>Growth Landing Pages</h3>
+            <p>Campaign-ready landing pages with persuasive content blocks, proof points, pricing, and contact flows.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section section-dark">
+    <section id="packages" class="section warm-section">
       <div class="container">
-        <p class="eyebrow">Featured Work</p>
-        <h2>Recent projects with measurable outcomes.</h2>
-        <div class="work-grid">
-          <article class="work-item">
-            <h3>NovaTech SaaS</h3>
-            <p>Redesigned a B2B product website and improved demo bookings by 52% in 3 months.</p>
+        <div class="section-heading fade-up">
+          <p class="eyebrow">Packages</p>
+          <h2>Flexible scopes with clear deliverables.</h2>
+          <p>Start lean, scale up, or build a complete digital presence.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card fade-up">
+            <p class="package-name">Landing Sprint</p>
+            <h3>Launch a focused offer</h3>
+            <p class="price">$950<span>/ project</span></p>
+            <ul>
+              <li>One high-converting landing page</li>
+              <li>Mobile-first responsive design</li>
+              <li>Contact form and CTA sections</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Start Sprint</a>
           </article>
-          <article class="work-item">
-            <h3>Blossom Beauty</h3>
-            <p>Built a new e-commerce storefront that increased checkout conversion by 31%.</p>
+          <article class="pricing-card featured fade-up" style="--delay: 90ms">
+            <p class="package-name">Studio Website</p>
+            <h3>Build your brand home</h3>
+            <p class="price">$2,400<span>/ project</span></p>
+            <ul>
+              <li>Up to seven responsive pages</li>
+              <li>Reusable section components</li>
+              <li>Portfolio, process, and pricing modules</li>
+            </ul>
+            <a class="btn" href="#contact">Choose Website</a>
           </article>
-          <article class="work-item">
-            <h3>Atlas Finance</h3>
-            <p>Created a clean, trusted brand web experience that doubled qualified leads.</p>
+          <article class="pricing-card fade-up" style="--delay: 180ms">
+            <p class="package-name">Growth Partner</p>
+            <h3>Iterate after launch</h3>
+            <p class="price">$780<span>/ month</span></p>
+            <ul>
+              <li>Monthly design and content updates</li>
+              <li>Landing page experiments</li>
+              <li>Performance and UX improvements</li>
+            </ul>
+            <a class="btn btn-ghost" href="#contact">Talk Growth</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Why Webreze</p>
-          <h2>Your design partner from idea to launch.</h2>
-          <p>
-            We are a boutique agency obsessed with craft, speed, and outcomes. You get a small senior team that works closely with you from discovery to launch.
-          </p>
-        </div>
-        <ul class="checklist">
-          <li>Strategy-first process</li>
-          <li>Senior designers and developers</li>
-          <li>Transparent timeline and communication</li>
-          <li>Post-launch support and iteration</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section testimonials">
+    <section id="portfolio" class="section">
       <div class="container">
-        <h2>What clients say</h2>
-        <blockquote>
-          “Webreze transformed our website into a lead engine. The process was smooth, and the quality exceeded expectations.”
-          <cite>— Sarah Kim, Marketing Director at NovaTech</cite>
-        </blockquote>
+        <div class="section-heading fade-up">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Selected work shaped around clarity, trust, and conversion.</h2>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card fade-up">
+            <div class="portfolio-visual sunrise"></div>
+            <div>
+              <span>Fintech SaaS</span>
+              <h3>Aruna Ledger</h3>
+              <p>A warm product marketing site with simplified pricing and a calmer onboarding story.</p>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up" style="--delay: 100ms">
+            <div class="portfolio-visual sand"></div>
+            <div>
+              <span>Hospitality</span>
+              <h3>Nala Retreat</h3>
+              <p>A premium booking journey using editorial sections, soft cards, and trust-led CTAs.</p>
+            </div>
+          </article>
+          <article class="portfolio-card fade-up" style="--delay: 200ms">
+            <div class="portfolio-visual mint"></div>
+            <div>
+              <span>Education</span>
+              <h3>Kelas Tumbuh</h3>
+              <p>A responsive learning platform homepage with clear programs and friendly proof points.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="container contact-grid">
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <p class="eyebrow">Process</p>
+          <h2>A calm workflow from first brief to confident launch.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item fade-up">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>We map goals, audience needs, references, and the business outcome each page must support.</p>
+          </article>
+          <article class="timeline-item fade-up" style="--delay: 80ms">
+            <span>02</span>
+            <h3>Design</h3>
+            <p>We turn the strategy into soft bento wireframes, polished UI, and reusable components.</p>
+          </article>
+          <article class="timeline-item fade-up" style="--delay: 160ms">
+            <span>03</span>
+            <h3>Build</h3>
+            <p>We develop responsive pages with accessible markup, smooth motion, and lightweight interactions.</p>
+          </article>
+          <article class="timeline-item fade-up" style="--delay: 240ms">
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>We review, refine, and hand over a stable website with support for your next iteration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container cta-card fade-up">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Let’s build your next high-performing website.</h2>
-          <p>Tell us about your goals and we’ll get back within one business day.</p>
+          <h2>Ready to shape a website that feels as good as it performs?</h2>
+          <p>Share your goals and Wirasena Digital will reply with a recommended scope, timeline, and next steps.</p>
         </div>
         <form class="contact-form" action="#" method="post">
           <label>
@@ -142,8 +257,17 @@
             <input type="email" name="email" placeholder="you@company.com" required />
           </label>
           <label>
-            Project Brief
-            <textarea name="brief" rows="4" placeholder="What are you building?" required></textarea>
+            Project type
+            <select name="project" required>
+              <option value="">Select one</option>
+              <option>Landing Sprint</option>
+              <option>Studio Website</option>
+              <option>Growth Partner</option>
+            </select>
+          </label>
+          <label>
+            Brief
+            <textarea name="brief" rows="4" placeholder="What do you want to build?" required></textarea>
           </label>
           <button class="btn" type="submit">Send Inquiry</button>
           <p class="form-note" aria-live="polite"></p>
@@ -153,9 +277,23 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-wrap">
-      <p>© <span id="year"></span> Webreze. All rights reserved.</p>
-      <p>Designed with purpose.</p>
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand">
+          <span class="brand-mark">WD</span>
+          <span>Wirasena Digital</span>
+        </a>
+        <p>Warm futuristic websites for modern brands.</p>
+      </div>
+      <div class="footer-links" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> Wirasena Digital. All rights reserved.</p>
     </div>
   </footer>
 
